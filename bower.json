@@ -1,0 +1,19 @@
+{
+    "name": "pay-slip",
+    "authors": [
+        "Chen Duan"
+    ],
+    "ignore": [],
+    "dependencies": {
+        "angular": "^1.6.3",
+        "angular-animate": "^1.5.7",
+        "angular-mocks": "^1.5.7",
+        "angular-ui-router": "^0.3.1",
+        "bootstrap": "^3.3.7",
+        "jquery-ui": "^1.11.4",
+		"angular-file-upload": "^2.5.0",
+		"jquery-csv": "^0.8.9",
+        "angular-numeric-directive": "*",
+        "underscore":"^1.9.1"
+    }
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<testsuite name="PhantomJS 2.1.1 (Windows 8.0.0)" package="unit" timestamp="2018-06-04T07:45:38" id="0" hostname="DESKTOP-8S00S96" tests="17" errors="0" failures="0" time="0">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1"/>
+  </properties>
+  <testcase name="Unit: calucator Services calucator Service: should not exit if null" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0).unit.Unit: calucator Services"/>
+  <testcase name="Unit: calucator Services calucator Service: should not exist with empty object" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0).unit.Unit: calucator Services"/>
+  <testcase name="Unit: calucator Services calucator Service: should not exist with incorrect employee header - firstName" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0).unit.Unit: calucator Services"/>
+  <testcase name="Unit: calucator Services calucator Service: should not exist with incorrect employee header - lastName" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0).unit.Unit: calucator Services"/>
+  <testcase name="Unit: calucator Services calucator Service: should not exist with incorrect employee header - annualSalary" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0).unit.Unit: calucator Services"/>
+  <testcase name="Unit: calucator Services calucator Service: should not exist with incorrect employee header - super" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0).unit.Unit: calucator Services"/>
+  <testcase name="Unit: calucator Services calucator Service: should not exist with incorrect employee header - paymentPeriod" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0).unit.Unit: calucator Services"/>
+  <testcase name="Unit: calucator Services calucator Service: should return object with 0 grossIncome when salary is in string format" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0).unit.Unit: calucator Services"/>
+  <testcase name="Unit: calucator Services calucator Service: should return object with 0 superAnnuation when super is in string format" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0).unit.Unit: calucator Services"/>
+  <testcase name="Unit: calucator Services calucator Service: should have property name chen duan when correct format" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0).unit.Unit: calucator Services"/>
+  <testcase name="Unit: calucator Services calucator Service: should be an object with property name chen duan when both annualsalary and super are 0" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0).unit.Unit: calucator Services"/>
+  <testcase name="Unit: data validation Services data validation Service: should return true with correct format" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0).unit.Unit: data validation Services"/>
+  <testcase name="Unit: data validation Services data validation Service: should return false with long string" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0).unit.Unit: data validation Services"/>
+  <testcase name="Unit: data validation Services data validation Service: should return true with correct salary range" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0).unit.Unit: data validation Services"/>
+  <testcase name="Unit: data validation Services data validation Service: should return false with salary out of range" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0).unit.Unit: data validation Services"/>
+  <testcase name="Unit: data validation Services data validation Service: should return true with correct super range" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0).unit.Unit: data validation Services"/>
+  <testcase name="Unit: data validation Services data validation Service: should return true with correct super range" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0).unit.Unit: data validation Services"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

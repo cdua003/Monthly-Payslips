@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for Services\dataValidationService.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">Services/</a> dataValidationService.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">93.94% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>31/33</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">91.3% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>21/23</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">93.94% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>31/33</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">50×</span>
+<span class="cline-any cline-yes">27×</span>
+<span class="cline-any cline-yes">23×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">50×</span>
+<span class="cline-any cline-yes">250×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">50×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">50×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-yes">50×</span>
+<span class="cline-any cline-yes">50×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">50×</span>
+<span class="cline-any cline-yes">50×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">(function () {
+    'use strict';
+&nbsp;
+    angular.module('app.dataValidationService', [])
+&nbsp;
+            .service('dataValidationService', dataValidationService);
+&nbsp;
+    dataValidationService.$inject = [];
+&nbsp;
+    function dataValidationService() {
+        var employeeSchema = [
+            { name: 'firstName', type: 'string', length: '20' },
+            { name: 'lastName', type: 'string', length: '20' },
+            { name: 'annualSalary', type: 'number' },
+            { name: 'super', type: 'percentage' },
+            { name: 'paymentPeriod', type: 'string', length: '30' }
+        ];
+&nbsp;
+        var checkValueBySchema = function(value, type, length) {
+&nbsp;
+            if (type == 'string' &amp;&amp; value.length &lt;= length) {
+                return value;
+            } else if (type == 'number' &amp;&amp; Number(value) != NaN &amp;&amp; Number(value) &gt;= 0) {
+                return Number(value);
+            } else if (type == 'percentage' &amp;&amp; Number(value) != NaN &amp;&amp; Number(value) &gt;= 0 &amp;&amp; Number(value) &lt;= 100) {
+                return Number(value);
+            }else {
+                return null;
+            }
+        };
+    
+        var getSchema = function(column){
+            var schema = _.filter(employeeSchema, function (item) {
+                return item.name === column;
+            })
+            <span class="missing-if-branch" title="if path not taken" >I</span>if(schema.length === 0){
+<span class="cstat-no" title="statement not covered" >                return null;</span>
+            }
+            return schema[0];
+        }
+&nbsp;
+        this.addExcelDataToJSONListBySchema = function(data, resultList) {
+            var obj = [];
+            var isValidSchema = true;
+            for (var property in data) {
+                var schema = getSchema(property);
+                <span class="missing-if-branch" title="if path not taken" >I</span>if(schema === null){
+<span class="cstat-no" title="statement not covered" >                    continue;</span>
+                }
+                var formatedValue = checkValueBySchema(data[property], schema.type, schema.length);
+                if (formatedValue != null) {
+                    obj[schema.name] = formatedValue;
+                } else {
+                    isValidSchema = false;
+                }
+            }
+            if (isValidSchema) {
+                resultList.push(obj);
+            }
+            return isValidSchema;
+        }
+    }
+})();</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Jun 04 2018 19:45:38 GMT+1200 (新西兰标准时间)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

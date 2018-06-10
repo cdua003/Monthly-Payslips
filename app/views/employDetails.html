@@ -1,0 +1,31 @@
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title">Update employee</h3>
+    </div>
+    <div class="panel-body">
+        <form name="form" data-ng-submit="EDC.updateEmployee()">
+            <div class="form-group">
+                <label class="control-label" for="firstName">First Name:</label>
+                <input class="form-control" name="firstName" type="text" data-ng-model="EDC.formData.detail.firstName" maxlength="20" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="lastName">Last Name:</label>
+                <input class="form-control" name="lastName" type="text" data-ng-model="EDC.formData.detail.lastName" maxlength="20" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="annualSalary">Annual Salary:</label>
+                <input class="form-control" name="annualSalary" data-ng-model="EDC.formData.detail.annualSalary" format="currency"/>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="superRate">Super Rate(%):</label>
+                <input numeric min="0" max="100" decimals="2" class="form-control" name="superRate" data-ng-model="EDC.formData.detail.super"/>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="period">Payment period:</label>
+                <input class="form-control" name="period" type="text" data-ng-model="EDC.formData.detail.paymentPeriod" maxlength="30" required />
+            </div>
+            <button id="back-btn" data-ui-sref="root.employees.payslip" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</button>
+            <button class="btn btn-success" data-ng-disabled="form.$invalid">Update <span class="glyphicon glyphicon-ok"></span></button>
+        </form>
+    </div>
+</div>
